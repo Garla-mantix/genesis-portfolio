@@ -12,38 +12,37 @@
     margin-right: 10%;
     gap: 10em;
     margin-top: 3em;
-    border: solid;
-}
 
-.section-top__left {
-    display: flex;
-    flex-direction: column;
-    max-width: 40%;
-    gap: 2em;
-    font-family: fonts.$main-font;
-}
+    &__left {
+        display: flex;
+        flex-direction: column;
+        max-width: 40%;
+        gap: 2em;
+        font-family: fonts.$main-font;
 
-.section-top__left-topic {
-    font-size: 22px;
-}
+        &-topic {
+            font-size: 22px;
+        }
 
-.section-top__left-hello {
-    font-size: 40px;
-}
+        &-hello {
+            font-size: 40px;
+        }
+    }
 
-.section-top__right {
-    font-family: fonts.$main-font;
-    align-content: flex-end;
-}
+    &__right {
+        font-family: fonts.$main-font;
+        align-content: flex-end;
 
-.section-top__right-quote {
-    font-style: italic;
-}
+        &-quote {
+            font-style: italic;
+        }
 
-.section-top__right-line {
-    border-top: solid;
-    width: 1.5em;
-    margin-bottom: 7px;
+        &-line {
+            border-top: solid;
+            width: 1.5em;
+            margin-bottom: 7px;
+        }
+    }
 }
 
 .focus {
@@ -57,102 +56,105 @@
     margin-bottom: 10em;
     margin-left: 10%;
     margin-right: 10%;
-    border: solid;
+
+    &__grid-container {
+        display: grid;
+        gap: 1em;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas: 
+        "i1 i1 i1 i5 i5 i5 i9 i9 i9"
+        "i1 i1 i1 i5 i5 i5 i9 i9 i9"
+        "i1 i1 i1 i5 i5 i5 i9 i9 i9"
+        "i1 i1 i1 i5 i5 i5 i9 i9 i9"
+        "i1 i1 i1 i5 i5 i5 i9 i9 i9"
+        "i1 i1 i1 i5 i5 i5 i9 i9 i9"
+        "i1 i1 i1 i6 i6 i6 i9 i9 i9"
+        "i2 i2 i2 i6 i6 i6 i9 i9 i9"
+        "i2 i2 i2 i6 i6 i6 i9 i9 i9"
+        "i2 i2 i2 i6 i6 i6 i9 i9 i9"
+        "i2 i2 i2 i6 i6 i6 i10 i10 i10"
+        "i2 i2 i2 i6 i6 i6 i10 i10 i10"
+        "i2 i2 i2 i6 i6 i6 i10 i10 i10"
+        "i2 i2 i2 i7 i7 i7 i10 i10 i10"
+        "i2 i2 i2 i7 i7 i7 i10 i10 i10"
+        "i3 i3 i3 i7 i7 i7 i10 i10 i10"
+        "i3 i3 i3 i7 i7 i7 i10 i10 i10"
+        "i3 i3 i3 i7 i7 i7 i11 i11 i11"
+        "i3 i3 i3 i7 i7 i7 i11 i11 i11"
+        "i3 i3 i3 i7 i7 i7 i11 i11 i11"
+        "i3 i3 i3 i7 i7 i7 i11 i11 i11"
+        "i3 i3 i3 i7 i7 i7 i11 i11 i11"
+        "i3 i3 i3 i8 i8 i8 i11 i11 i11"
+        "i4 i4 i4 i8 i8 i8 i11 i11 i11"
+        "i4 i4 i4 i8 i8 i8 i11 i11 i11"
+        "i4 i4 i4 i8 i8 i8 i11 i11 i11"
+        "i4 i4 i4 i8 i8 i8 i12 i12 i12"
+        "i4 i4 i4 i8 i8 i8 i12 i12 i12"
+        "i4 i4 i4 i8 i8 i8 i12 i12 i12"
+        "i4 i4 i4 i8 i8 i8 i12 i12 i12"
+        "i4 i4 i4 i8 i8 i8 i12 i12 i12"
+        "i4 i4 i4 i8 i8 i8 i12 i12 i12";
+    }
+
+    &__grid-item__1 {
+        grid-area: i1;
+    }
+
+    &__grid-item__2 {
+        grid-area: i2;
+    }
+
+    &__grid-item__3 {
+        grid-area: i3;
+    }
+
+    &__grid-item__4 {
+        grid-area: i4;
+    }
+
+    &__grid-item__5 {
+        grid-area: i5;
+    }
+
+    &__grid-item__6 {
+        grid-area: i6;
+    }
+
+    &__grid-item__7 {
+        grid-area: i7;
+    }
+
+    &__grid-item__8 {
+        grid-area: i8;
+    }
+
+    &__grid-item__9 {
+        grid-area: i9;
+    }
+
+    &__grid-item__10 {
+        grid-area: i10;
+    }
+
+    &__grid-item__11 {
+        grid-area: i11;
+    }
+
+    &__grid-item__12 {
+        grid-area: i12;
+    }
 }
 
-.gallery__grid-container {
-    display: grid;
-    gap: 1em;
-    justify-content: center;
-    align-items: center;
-    grid-template-areas: 
-    "i1 i1 i1 i5 i5 i5 i9 i9 i9"
-    "i1 i1 i1 i5 i5 i5 i9 i9 i9"
-    "i1 i1 i1 i5 i5 i5 i9 i9 i9"
-    "i1 i1 i1 i5 i5 i5 i9 i9 i9"
-    "i1 i1 i1 i5 i5 i5 i9 i9 i9"
-    "i1 i1 i1 i5 i5 i5 i9 i9 i9"
-    "i1 i1 i1 i6 i6 i6 i9 i9 i9"
-    "i2 i2 i2 i6 i6 i6 i9 i9 i9"
-    "i2 i2 i2 i6 i6 i6 i9 i9 i9"
-    "i2 i2 i2 i6 i6 i6 i9 i9 i9"
-    "i2 i2 i2 i6 i6 i6 i10 i10 i10"
-    "i2 i2 i2 i6 i6 i6 i10 i10 i10"
-    "i2 i2 i2 i6 i6 i6 i10 i10 i10"
-    "i2 i2 i2 i7 i7 i7 i10 i10 i10"
-    "i2 i2 i2 i7 i7 i7 i10 i10 i10"
-    "i3 i3 i3 i7 i7 i7 i10 i10 i10"
-    "i3 i3 i3 i7 i7 i7 i10 i10 i10"
-    "i3 i3 i3 i7 i7 i7 i11 i11 i11"
-    "i3 i3 i3 i7 i7 i7 i11 i11 i11"
-    "i3 i3 i3 i7 i7 i7 i11 i11 i11"
-    "i3 i3 i3 i7 i7 i7 i11 i11 i11"
-    "i3 i3 i3 i7 i7 i7 i11 i11 i11"
-    "i3 i3 i3 i8 i8 i8 i11 i11 i11"
-    "i4 i4 i4 i8 i8 i8 i11 i11 i11"
-    "i4 i4 i4 i8 i8 i8 i11 i11 i11"
-    "i4 i4 i4 i8 i8 i8 i11 i11 i11"
-    "i4 i4 i4 i8 i8 i8 i12 i12 i12"
-    "i4 i4 i4 i8 i8 i8 i12 i12 i12"
-    "i4 i4 i4 i8 i8 i8 i12 i12 i12"
-    "i4 i4 i4 i8 i8 i8 i12 i12 i12"
-    "i4 i4 i4 i8 i8 i8 i12 i12 i12"
-    "i4 i4 i4 i8 i8 i8 i12 i12 i12";
-}
-
-.gallery__grid-item__1 {
-    grid-area: i1;
-}
-
-.gallery__grid-item__2 {
-    grid-area: i2;
-}
-
-.gallery__grid-item__3 {
-    grid-area: i3;
-}
-
-.gallery__grid-item__4 {
-    grid-area: i4;
-}
-
-.gallery__grid-item__5 {
-    grid-area: i5;
-}
-
-.gallery__grid-item__6 {
-    grid-area: i6;
-}
-
-.gallery__grid-item__7 {
-    grid-area: i7;
-}
-
-.gallery__grid-item__8 {
-    grid-area: i8;
-}
-
-.gallery__grid-item__9 {
-    grid-area: i9;
-}
-
-.gallery__grid-item__10 {
-    grid-area: i10;
-}
-
-.gallery__grid-item__11 {
-    grid-area: i11;
-}
-
-.gallery__grid-item__12 {
-    grid-area: i12;
+.getbig {
+    width: 100%;
+    height: 100%;
 }
 
 // -------- Services ---------
 
 .services-container {
     display: flex;
-    border: solid;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 3em;
@@ -184,3 +186,47 @@
         line-height: 2em;
     }
 }
+
+// -------- Awards ---------
+
+.awards {
+    border: solid;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10em;
+    font-family: fonts.$main-font;
+    display: flex;
+    flex-direction: column;
+
+
+    &__awwwards-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__CssDesignAwards-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 22px;
+        font-style: bold;
+    }
+
+    &__app {
+        margin-right: -10em;
+        border: solid;
+    }
+
+    &__category {
+     font-size: 18px;
+     font-style: bold;
+
+     &-2 {
+        margin-top: 4em;
+        margin-bottom: 4em;
+     }
+    }
+}
+
