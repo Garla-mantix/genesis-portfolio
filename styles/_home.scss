@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section-top {
+    display: flex;
+    margin-left: 10%;
+    gap: 10em;
+    margin-top: 3em;
+}
+
+.section-top__left {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    gap: 2em;
+    font-family: fonts.$main-font;
+}
+
+.section-top__left-topic {
+    font-size: 22px;
+}
+
+.section-top__left-hello {
+    font-size: 40px;
+}
+
+.section-top__right {
+    font-family: fonts.$main-font;
+    align-content: flex-end;
+    
+
+}
+
+.section-top__right-line {
+    border-top: solid;
+    width: 1.5em;
+    margin-bottom: 7px;
+
+}
+
+.focus {
+    color: #4A4FF2;
+}
