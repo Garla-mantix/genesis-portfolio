@@ -9,8 +9,10 @@
 .section-top {
     display: flex;
     margin-left: 10%;
+    margin-right: 10%;
     gap: 10em;
     margin-top: 3em;
+    border: solid;
 }
 
 .section-top__left {
@@ -55,6 +57,7 @@
     margin-bottom: 10em;
     margin-left: 10%;
     margin-right: 10%;
+    border: solid;
 }
 
 .gallery__grid-container {
@@ -143,4 +146,41 @@
 
 .gallery__grid-item__12 {
     grid-area: i12;
+}
+
+// -------- Services ---------
+
+.services-container {
+    display: flex;
+    border: solid;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3em;
+}
+
+.services-text {
+    margin-right: 20%;
+    font-family: fonts.$main-font;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 38px;
+    max-width: 50%;
+}
+
+.services-right {
+    display: flex;
+    font-style: normal;
+    opacity: 60%;
+    font-size: 18px;
+
+    &__one {
+        display: flex;
+        gap: 2.5em;
+    }
+    
+
+    & ul {
+        list-style: none;
+        line-height: 2em;
+    }
 }
