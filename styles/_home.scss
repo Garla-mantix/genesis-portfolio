@@ -8,14 +8,16 @@
 
 .section-top {
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
+    max-width: 1360px;
+    width: 100%;
+    margin: auto;
     gap: 10em;
     margin-top: 3em;
 
     &__left {
         display: flex;
         flex-direction: column;
+        margin-left: 10%;
         max-width: 40%;
         gap: 2em;
         font-family: fonts.$main-font;
@@ -32,6 +34,7 @@
     &__right {
         font-family: fonts.$main-font;
         align-content: flex-end;
+        margin-right: 10%;
 
         &-quote {
             font-style: italic;
