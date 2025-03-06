@@ -193,43 +193,83 @@
 // -------- Awards ---------
 
 .awards {
-    border: solid;
+    margin: auto;
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 10em;
     margin-bottom: 10em;
     font-family: fonts.$main-font;
     display: flex;
     flex-direction: column;
+    max-width: 1110px;
+    border-top: solid rgba(0, 0, 0, 0.168);
+    border-bottom: solid rgba(0, 0, 0, 0.168);
+    padding-top: 2em;
+   
 
 
     &__awwwards-container {
         display: flex;
         justify-content: space-between;
+        
     }
 
     &__CssDesignAwards-container {
         display: flex;
         justify-content: space-between;
+        border-top: solid rgba(0, 0, 0, 0.168);
+        padding-top: 3em;
     }
 
     &__title {
         font-size: 22px;
         font-style: bold;
+        font-weight: 700;
+        min-width: 9em;
+       
+        margin-right: 1em;
     }
 
     &__app {
-        margin-right: -10em;
-        border: solid;
+        max-width: 170px;
+        font-style: normal;
+        font-size: 16px;
+
+        &-1 {
+            margin-bottom: 1em;
+
+            &__info {
+                margin-top: 2em;
+                margin-bottom: 6em;
+                opacity: 60%;
+            }
+
+        }
+
+        &-2 {
+            margin-top: 1em;
+        }
     }
 
     &__category {
      font-size: 18px;
      font-style: bold;
+     font-weight: 700;
+     margin-right: 1em;
 
      &-2 {
-        margin-top: 4em;
-        margin-bottom: 4em;
+        margin-top: 10em;
+       
      }
+    }
+
+    &__year {
+        margin-left: 2em;
+        position: relative;
+
+        &-1 {
+            margin-bottom: 12em;
+        }
     }
 }
 
