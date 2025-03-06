@@ -156,11 +156,18 @@
 
 // -------- Services ---------
 
+.services {
+    max-width: 1079px;
+    width: 100%;
+    margin: auto;
+}
+
 .services-container {
     display: flex;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 3em;
+   
 }
 
 .services-text {
@@ -193,7 +200,6 @@
 // -------- Awards ---------
 
 .awards {
-    margin: auto;
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 10em;
@@ -201,13 +207,17 @@
     font-family: fonts.$main-font;
     display: flex;
     flex-direction: column;
-    max-width: 1110px;
     border-top: solid rgba(0, 0, 0, 0.168);
     border-bottom: solid rgba(0, 0, 0, 0.168);
     padding-top: 2em;
+    
+
+    &__container {
+        max-width: 1110px;
+        width: 100%;
+        margin: auto;
+    }
    
-
-
     &__awwwards-container {
         display: flex;
         justify-content: space-between;
