@@ -4,4 +4,107 @@
     box-sizing: border-box;
 }
 
-// ------------ First section ------------
+// ------------ Top-section ------------
+
+.projects__top-section {
+    display: flex;
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    gap: 2em;
+    margin-top: 3em;
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        max-width: 635px;
+        gap: 2em;
+        font-family: fonts.$main-font;
+
+        &-title {
+            font-style: bold;
+            font-weight: 650;
+            font-size: 40px;
+            line-height: 55px;
+            max-width: 475px;
+            margin-top: 0;
+        }
+
+        &-paragraph {
+            font-size: 16px;
+            line-height: 26px;
+            font-style: normal;
+            opacity: 80%;
+        }
+    }
+
+    &__right {
+        font-family: fonts.$main-font;
+        margin-right: 10%;
+        max-width: 335px;
+        width: 100%;
+
+        &-container {
+            margin-top: 2.2em;
+            display: flex;
+            flex-direction: row;
+            border-bottom: solid rgba(0, 0, 0, 0.169);
+            font-style: bold;
+            font-size: 18px;
+        }
+
+        &-title {
+            width: 7em;
+            opacity: 50%;
+        }
+
+        &-text {
+            width: 10em;
+            max-width: 164px;
+            font-style: bold;
+            margin-bottom: 1em;
+        }
+    }
+}
+
+// ------------ Img-section ------------
+
+.projects__img-section {
+    margin-top: 5em;
+    margin-left: 10%;
+    margin-right: 10%;
+   
+    &__container {
+        max-width: 1110px;
+    }
+
+    &__image {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+// ------------ Text-section ------------
+
+.projects__text-section {
+    margin-top: 5em;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5em;
+
+    &__container {
+        max-width: 1109px;
+    }
+
+    &__text {
+        font-family: fonts.$main-font;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 26px;
+        opacity: 80%;
+    }
+}
+
+
+
