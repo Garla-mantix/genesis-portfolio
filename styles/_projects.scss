@@ -94,7 +94,7 @@
     margin-bottom: 5em;
 
     &__container {
-        max-width: 1109px;
+        max-width: 1110px;
     }
 
     &__text {
@@ -103,6 +103,27 @@
         font-size: 16px;
         line-height: 26px;
         opacity: 80%;
+    }
+}
+
+// ------------- Gallery-section ------------
+
+.projects__gallery-section {
+    margin-left: 10%;
+    margin-right: 10%;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        max-width: 1110px;
+        width: 100%;
+        gap: 1.5em;
+    }
+
+    &__gallery-image {
+        width: 100%;
+        max-width: 31%;
+        height: auto;
     }
 }
 
