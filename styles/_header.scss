@@ -24,6 +24,10 @@
     max-height: 2em;
 }
 
+.logo:hover {
+    transform: scale(1.2);
+}
+
 .header-container__navbar ul {
     list-style: none;
     display: flex;

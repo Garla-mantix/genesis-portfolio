@@ -91,7 +91,7 @@
     margin-top: 5em;
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom: 5em;
+    margin-bottom: 4em;
 
     &__container {
         max-width: 1110px;
@@ -111,6 +111,7 @@
 .projects__gallery-section {
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 4em;
 
     &__container {
         display: flex;
@@ -122,10 +123,7 @@
 
     &__gallery-image {
         width: 100%;
-        max-width: 31%;
+        max-width: 32%;
         height: auto;
     }
 }
-
-
-
